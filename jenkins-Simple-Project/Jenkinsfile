@@ -1,0 +1,15 @@
+node{
+    stage("Clone"){
+        git 'https://github.com/LeKuetebi/jenkins-test.git'
+    }
+    
+    stage("Compile"){
+        sh '''cd jenkins-Simple-Project/src/
+            javac Main.java'''
+    }
+    
+    stage("Run"){
+         sh '''cd jenkins-Simple-Project/src/
+            java Main'''
+    }
+}
