@@ -6,7 +6,7 @@ public class Main {
 		System.out.println("Hello Brilland");
 		
 		if(args.length!=0) {
-			System.out.println("Thank you for the input: "+Arrays.toString(args));
+			System.out.println("Thank you for the input: ---"+Arrays.toString(args));
 		}
 	}
 
